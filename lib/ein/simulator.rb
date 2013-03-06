@@ -1,6 +1,3 @@
-require 'console'
-require 'world'
-
 ##############################
 #
 #This class is the highest level entity, controls how
