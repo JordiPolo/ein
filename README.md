@@ -1,6 +1,6 @@
 # Ein
 
-TODO: Write a gem description
+Simple 2D physics simulator
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Read specs for details
 
 ## Contributing
 

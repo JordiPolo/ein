@@ -12,8 +12,10 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Very simple 2D physics simulator}
   gem.homepage      = "https://github.com/jordiPolo/ein"
 
-  gem.files         = `git ls-files`.split($/)
+  gem.files         = Dir["lib/**/*"]
+  gem.test_files    = Dir['spec/**/*']
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+
+  gem.add_development_dependency 'rspec', '~> 2.13'
 end
