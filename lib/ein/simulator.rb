@@ -6,11 +6,10 @@
 ###############################
 module Ein
   class Simulator
-    attr_reader :world, :current_time, :formatter
+    attr_reader :world, :current_time
 
-    def initialize(formatter = nil)
+    def initialize
       @current_time = Time.now
-      @formatter = formatter || Console.new
       @world = World.new
       @running = false
     end
@@ -37,13 +36,13 @@ module Ein
     STEP = 0.01
 
     def run
-      @formatter.info "Simulation started"
+      LOGGER.info "Simulation started"
       while (@running)
         @current_time += STEP
         @world.step(STEP)
         sleep(STEP)
       end
-      @formatter.info "Simulation terminated"
+      LOGGER.info "Simulation terminated"
     end
 
   end
