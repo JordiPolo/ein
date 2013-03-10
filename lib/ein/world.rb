@@ -1,3 +1,4 @@
+require 'json' # hash.to_json
 ##############################
 #
 #  This class represents the virtual world our simulation runs in
