@@ -11,7 +11,7 @@ module Ein
     end
 
     context "it can run simulations" do
-      subject(:simulator) {Simulator.new(Console.new(:quiet)) }
+      subject(:simulator) {Simulator.new}
 
       it "can be started and stopped" do
         simulator.start

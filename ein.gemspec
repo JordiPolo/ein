@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*k encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ein/version'
@@ -18,4 +18,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_development_dependency 'rspec', '~> 2.13'
+  gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'pry-debugger'
 end
